@@ -2,7 +2,7 @@
 
 body {
   margin:0;
-  background: url("https://polarnaciara.files.wordpress.com/2014/12/aurora.jpg") black;
+  background: url("Images/background.jpg") black;
   background-size: 100% 1000px;
   background-repeat: no-repeat;
 }
@@ -30,7 +30,7 @@ html {
   text-align:center;
   color:white;
   z-index: 10;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
 .description{
