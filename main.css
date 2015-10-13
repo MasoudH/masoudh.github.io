@@ -17,7 +17,6 @@ html {
 }
 #bg {
   background: #000;
-  background-image: url("https://polarnaciara.files.wordpress.com/2014/12/aurora.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +30,7 @@ html {
   text-align:center;
   color:white;
   z-index: 10;
+  margin-top: -5px;
 }
 
 .description{
