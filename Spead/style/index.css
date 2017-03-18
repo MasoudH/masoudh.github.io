@@ -1,0 +1,229 @@
+
+
+@font-face {
+	font-family: geo;
+	src: url("../fonts/GeosansLight.ttf");
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(102,102,255);
+	overflow: hidden;
+}
+
+* {
+	font-family: geo;
+}
+
+img {
+	padding-top: 140px;
+}
+
+#loading {
+	z-index: 100;
+	background-color: rgb(102,102,255);
+}
+
+#mid {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#on, #off {
+	background-color: #2E2EA8;
+	font-weight: bolder;
+	border: 0;
+	color: #C5C5F1;
+	box-shadow: 2px 2px 4px #000;
+	margin-left: 5px;
+}
+
+.adults {
+	margin-left: 20px;
+}
+
+#loading #kids, #loading #adults {
+	position: relative;
+	background-color: #000;
+	width: 100px;
+	height: 45px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: 0 solid;
+	box-shadow: 2px 2px 4px #000;
+	color: #fff;
+	font-size: 25px;
+	margin-top: 20vh;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+#loading #kids:hover, #loading #adults:hover {
+	-webkit-transition: all 0.4s ease-in-out;
+	background-color: #fff;
+	color: #000;
+}
+
+#content #title h1 {
+	color : #fff;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+#content #curWord {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 15vh;
+	font-weight: bolder;
+	line-height: 1;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #2E2EA8;
+}
+
+#content #marks h1 {
+	text-align: center;
+	color: #C5C5F1;
+	font-size: 20px;
+	line-height: 0;
+}
+
+#content #waiting {
+	text-align: center;
+	font-size: 30px;
+	color: #C5C5F1;
+	bottom: 0;
+	margin-top: 20px;
+}
+
+#thing {
+	margin-bottom: 20px;
+}
+
+#content #waiting .one {
+	opacity: 0;
+	padding-right: 2px;
+	-webkit-animation: dot 1.3s infinite;
+	-webkit-animation-delay: 0.0s;
+	animation: dot 1.3s infinite;
+	animation-delay: 0.0s;
+}
+
+#content #waiting .two {
+	opacity: 0;
+	padding-right: 2px;
+	-webkit-animation: dot 1.3s infinite;
+	-webkit-animation-delay: 0.2s;
+	animation: dot 1.3s infinite;
+	animation-delay: 0.2s;
+}
+
+#content #waiting .three {
+	opacity: 0;
+	-webkit-animation: dot 1.3s infinite;
+	-webkit-animation-delay: 0.3s;
+	animation: dot 1.3s infinite;
+	animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes dot {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+footer {
+	width: 100%;
+	position: relative;
+	height: 50px;
+	bottom: 0;
+}
+
+footer p {
+	font-family: geo;
+	text-align: center;
+	color: #C5C5F1;
+	bottom: 0; 
+	font-weight: lighter;
+}
+
+/* For Web textarea API */
+#speech-content-elements {
+	position: relative;
+	margin: auto;
+	width: 60%;
+	height: 40px;
+	max-height: 300px;
+	max-width: 800px;
+}
+
+#speech-page-content {
+	width: 100%;
+	height: 60px;
+	overflow: auto;
+	border: none;
+	resize: none;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+}
+
+#speech-page-content:focus {
+	outline: none;
+}
+
+.speech-content-mic {
+	width: 25px;
+	height: 25px;
+	cursor:pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.speech-mic {
+	background-size: contain;
+}
+
+.speech-mic-works {
+	background-size: contain;
+}
+
+#speech-page-content::-webkit-scrollbar {
+	width: 6px;
+}
+
+#speech-page-content::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+#speech-page-content::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+}
+
+textarea {
+	background-color: inherit;
+	color : #000;
+	font-size: 50pt;
+	text-align: center;
+	font-weight: bolder;
+	margin-top: 10px;
+}
+
+textarea:focus {
+	background-color: inherit;
+	text-align: center;
+	outline: none !important;
+	border: 1px solid inherit;
+	box-shadow: 0 0 10px inherit;
+}

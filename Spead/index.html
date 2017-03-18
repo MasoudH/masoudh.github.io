@@ -1,0 +1,54 @@
+<!DOCTYPE html5>
+<!--
+Spead
+Web app created at Hack Western 2015
+-->
+<html>
+	<head>
+		<title>Spead</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="lib/sweet-alert.min.js"></script>
+		<!-- Our javascript -->
+		<script type="text/javascript" src="js/textarea-helper.js"></script>
+		<!-- Library used for API recognition -->
+		<script type="text/javascript" src="js/speech-recognizer.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+	</head>
+	<body>
+		<div id="loading">
+			<div id="mid" align="center">
+				<img src="images/logo.png" />
+				<br />
+				<input type="button" id="kids" value="Kids"/>
+				<input type="button" id="adults" value="Adults" class="adults"/>
+			</div>
+
+			<footer style="bottom:0;position:absolute;"><p>&copy 2015 Spead Inc.</p></footer>
+		</div>
+
+		<div id="content">
+			<div id="title"></div>
+			<div id="marks"></div>
+
+			<div id="curWord"></div>
+
+            <div id="speech-content-elements">
+                <textarea id="speech-page-content" name="pageContent"></textarea>
+                <div class="speech-content-mic speech-mic"/>
+            </div>
+
+            <div align="center" id="thing">
+	            <button id="on">Start</button>
+	            <button id="off">Stop</button>
+        	</div>
+
+			<div id="waiting">Waiting<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
+
+			<br/><br/><br/>
+			<footer><p>&copy 2015 Spead Inc.</p></footer>
+		</div>
+		
+	</body>
+</html>
